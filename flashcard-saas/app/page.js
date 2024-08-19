@@ -1,5 +1,7 @@
 import { Container } from "@mui/material";
 import Image from "next/image";
+import {AppBar, Toolbar, Typography, Button, UserButton, Box, Grid} from "@mui/material";
+import { SignedOut, SignedIn } from "@clerk/nextjs";
 
 export default function Home() {
   return ( <Container>
