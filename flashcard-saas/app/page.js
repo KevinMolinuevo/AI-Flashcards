@@ -36,7 +36,7 @@ export default function Home() {
 <Box sx={{my: 6}}>
   <Typography variant="h4" component="h2" gutterBottom>Features</Typography>
   <Grid container spacing={4}>
-    {/* Feature items */}
+    {/* Features*/}
   </Grid>
 </Box>
 <Box sx={{my: 6, textAlign: 'center'}}>
