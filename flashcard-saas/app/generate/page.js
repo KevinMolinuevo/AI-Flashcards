@@ -1,5 +1,6 @@
 'use client'
 
+import { useUser } from '@clerk/nextjs'
 import { useState } from 'react'
 import {
   Container,
@@ -18,12 +19,17 @@ import {
 } from '@mui/material'
 import { doc, collection, getDoc, writeBatch } from 'firebase/firestore'
 import { db } from 'firebase/firestore'  // Ensure you import your Firebase config
+import { useRouter } from 'next/router'
 
-export default function Generate({ user }) {  // Assuming you are passing user as a prop
+export default function Generate({ }) { 
+  const {isLoaded, isSignedIn, user}= useUser()
   const [text, setText] = useState('')
   const [flashcards, setFlashcards] = useState([])
-  const [setName, setSetName] = useState('')
+  const [flipped, setFlipped] = useState([])
+  const [setName, setSetName] = useState(false)
+  const [open, setOpen] = useState('')
   const [dialogOpen, setDialogOpen] = useState(false)
+  const router = useRouter
 
   const handleSubmit = async () => {
     if (!text.trim()) {
