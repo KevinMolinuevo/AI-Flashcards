@@ -46,17 +46,17 @@ export default function Home() {
     </Typography>
     </Grid>
     <Grid item xs = {12} md={4}>
-    <Typography variant="h6"> Easy Input text</Typography>
+    <Typography variant="h6">FlashCards could be saved</Typography>
     <Typography>
       {''}
-      Simply input your text and let our software do the rest. 
+      Next time you return we will be waiting. 
     </Typography>
     </Grid>
     <Grid item xs = {12} md={4}>
-    <Typography variant="h6"> Easy Input text</Typography>
+    <Typography variant="h6"> Any topic could be used</Typography>
     <Typography>
       {''}
-      Simply input your text and let our software do the rest. 
+      From math to science to a random book we make it all. 
     </Typography>
     </Grid>
   </Grid>
